@@ -27,16 +27,6 @@ public class GameController {
 	
 	private List<BaseGame> allGames = new ArrayList<BaseGame>();
 	
-	@GET
-	@Path("/zdrasti")
-	@Produces(MediaType.TEXT_PLAIN)
-    public Response hello() {
-
-        String output = "Hello World!";
-
-        return Response.status(200).entity(output).build();
-    }
-	
 	
 	@POST
 	@Path("/startGame")
